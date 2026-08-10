@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form in HTML</h1>
+    <form  method="post" method="get" >
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Kalu Babu" required >
+    <input type="email" name="email" id="email" placeholder="kaluba@gmail.com or kalubabu@38gmail.com" reduired >
+    <br><br>
+    <input type="password" name="pw" id="password" placeholder="********" required>
+  
+    <br><br>
+    <label for="">Gender</label>
+    <br>
+    <input type="radio" name="" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="" id="female" value="female">
+    <label for="female">Female</label>
+    <br><br>
+    <label for="cv">CV</label>
+    <input type="file" name="cv" id="cv" multiple accept=".pdf,png">
+    <br>
+    <label for="Postal" >Postalcode</label>
+    <input type="text" name="postalcode" id="postal" pattern="[0-9]{5}" plaeholder="100015">
+    <br>
+    <input type="date" name="" id="">
+    <input type="datetime-local" name="" id="">
+    <input type="color" name="" id="">
+    
+  
+    <br><br>
+    <input type="reset" value="reset">
+    <label type="reset">Reset</label>
+    <input type="submit" value="Submit">
+    </form>
+
+    
+</body>
+</html>
+<!--- 
+from - initiates the form.
+input - used to generate input fields like text, password, email, etc.
+id - unique identifier for the web page.
+for - same value as id in input field.
+name - value responsible to recieve data in backend.
+placeholder - to show text while filling the form.
+method - how data is send to server.
+get - can only send upto 2000 characters, data visible in URL.
+post - can send large data in a form, data is secure during for submission.
+input-email - for email validation.
+input-password - for password.
+input-submit - form submission.
+input-radio - multiple choice single select.
+
+-->
